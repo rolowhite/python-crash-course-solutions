@@ -13,3 +13,20 @@ people = [person1, person2, person3]
 for item in people:
     print(f"{item['first_name']} {item['last_name']} lives in {item['address']}")
 
+
+fav_places={
+    'riasat' : ['dhaka', 'khulna', 'rongpur'],
+    'kabir' : ['rajshahi','bosila'],
+    'siam' : ['pabna'],
+}
+
+for item in fav_places.keys():
+    
+    print(f"{item} loves these places: ")
+    
+    for key in fav_places[item]:
+        print(f"{key} \n")
+       
+
+
+
