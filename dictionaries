@@ -1,0 +1,15 @@
+person1 = { 'first_name' :  'riasat',
+           'last_name' : 'hasan',
+           'address' : 'dhaka',}
+person2 = { 'first_name' :  'john',
+           'last_name' : 'karim',
+           'address' : 'london',}
+person3 = { 'first_name' :  'bron',
+           'last_name' : 'aston',
+           'address' : 'bahamas',}
+
+people = [person1, person2, person3]
+
+for item in people:
+    print(f"{item['first_name']} {item['last_name']} lives in {item['address']}")
+
