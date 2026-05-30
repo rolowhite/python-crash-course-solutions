@@ -11,3 +11,20 @@ while active:
 print("you've added following toppings")
 for top in topping:
     print(f"\n{top}")
+
+data ={}
+status = True
+while status:
+    name = input("what is your name \n")
+    dream = input("dream place? \n")
+    data[name]= dream
+    proceed=input("do you like to pass the msg to anyone? \n")
+    
+    if proceed == 'no':
+        print("thanks for your patience")
+        status = False
+        
+for names,dreams in data.items():
+    print(f"{names} dream is {dreams}")        
+
+
