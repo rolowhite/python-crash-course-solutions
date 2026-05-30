@@ -1,0 +1,13 @@
+topping=[]
+active =  True
+while active:
+    toppings=input("what topings you need \n")
+    if toppings == 'quit':
+        active = False
+    else:    
+
+        topping.append(toppings)
+    
+print("you've added following toppings")
+for top in topping:
+    print(f"\n{top}")
