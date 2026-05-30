@@ -26,6 +26,20 @@ for item in fav_places.keys():
     
     for key in fav_places[item]:
         print(f"{key} \n")
+
+users = {
+    'riasat' : {
+        'first' : 'riasat',
+        'last' : 'labib',
+    },
+    'mcru' : {
+        'first' : 'mc',
+        'last' : 'bc',
+    }
+}
+
+for user_name, item in users.items():
+    print(f"{user_name} name is {item['first']} {item['last']}")
        
 
 
