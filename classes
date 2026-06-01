@@ -1,0 +1,59 @@
+# class employee:
+#     def __init__(self, first, last, pay):
+
+# emp_1=employee()
+# emp_2=employee()
+
+# ''' printing the adress '''
+
+# print(emp_1)
+# print(emp_2)
+
+# emp_1.email='riasathasanlabib@gmail.com'
+# emp_2.email='omenfall@gmail.com'
+
+# print(emp_1.email)
+# print(emp_2.email)
+
+
+# '''problem 1 and 2 '''
+
+# class Restaurants:
+#     def __init__(self,restaurant_name,cruisine_type):
+#         self.name=restaurant_name
+#         self.type=cruisine_type
+#     def describe_restaurants(self):
+#         return f"{self.name} serves {self.type}"
+#     def open_restaurants(self):
+#         return "the res is open"
+
+# res1=Restaurants('westin','sushi')
+# res2=Restaurants('lapieza','crossant')
+# res3=Restaurants('avano','cafe')
+
+# print(res1.describe_restaurants())
+# print(res2.describe_restaurants())
+# print(res3.describe_restaurants())
+
+# print(res1.open_restaurants())
+# print(res2.open_restaurants())
+# print(res3.open_restaurants())
+
+'''problem 3'''
+
+class user:
+    def __init__(self,first_name,last_name):
+        self.name=f"{first_name} {last_name}"
+
+    def describe_user(self):
+        return f"{self.name}"
+    def greet_user(self):
+        return f"nice to see you"
+        
+user1=user('riasat','hasan')
+user2=user('anika','tabassum')
+user3=user('siam','alam')
+
+print(user1.describe_user())
+print(user2.describe_user())
+print(user3.describe_user())
