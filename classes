@@ -39,21 +39,41 @@
 # print(res2.open_restaurants())
 # print(res3.open_restaurants())
 
-'''problem 3'''
+# '''problem 3'''
 
-class user:
-    def __init__(self,first_name,last_name):
-        self.name=f"{first_name} {last_name}"
+# class user:
+#     def __init__(self,first_name,last_name):
+#         self.name=f"{first_name} {last_name}"
 
-    def describe_user(self):
-        return f"{self.name}"
-    def greet_user(self):
-        return f"nice to see you"
+#     def describe_user(self):
+#         return f"{self.name}"
+#     def greet_user(self):
+#         return f"nice to see you"
         
-user1=user('riasat','hasan')
-user2=user('anika','tabassum')
-user3=user('siam','alam')
+# user1=user('riasat','hasan')
+# user2=user('anika','tabassum')
+# user3=user('siam','alam')
 
-print(user1.describe_user())
-print(user2.describe_user())
-print(user3.describe_user())
+# print(user1.describe_user())
+# print(user2.describe_user())
+# print(user3.describe_user())
+
+# '''problem 9.4'''
+# class Restaurants:
+#     def __init__(self, restaurant_name, cruisine_served):
+#         self.resname=restaurant_name
+#         self.cruisine=cruisine_served
+#         self.served=0        #default value 
+#     def set_number_served(self, number_served):
+#         self.served = self.served + number_served
+#         return self.served
+#     def increment_number_served(self,number):
+#         self.served = self.served +number  #it has changed the self served from prev funtion if it is called
+#         return self.served
+        
+# Restaurant=Restaurants('avano','sushi')
+# print(Restaurant.served) #this is not a method so we dont use brackets here
+# #print(Restaurant.set_number_served(60))
+# print(Restaurant.increment_number_served(40))  #if set_number_served(60) called then output will be 100 
+
+
