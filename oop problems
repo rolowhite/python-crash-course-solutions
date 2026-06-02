@@ -1,0 +1,79 @@
+# '''problem 9-6'''
+# class restaurant:
+#     def __init__(self,first_name,last_name,cruisine):
+#         self.name=f'{first_name} {last_name}'
+#         self.dish=cruisine
+# class icecreamstand(restaurant):
+#      def __init__(self,first_name,last_name,cruisine,flavor):
+#          super().__init__(first_name,last_name,cruisine)
+#          self.item=flavor
+#      def show_items(self):
+#          for item in self.item:
+#              print(item)
+# lists=['venilla','choco','strawberry']                  
+# res1=icecreamstand('frozen','peak','ice-cream',lists)
+# res1.show_items()
+
+# '''problem 9-7 and 8'''
+# class user:
+#     def __init__(self, first_name, last_name):
+#         self.name="{} {}".format(first_name,last_name)
+#     def describe(self):
+#         return self.name
+
+    
+# class privileges:
+#     def __init__(self,privileges):
+#         self.privilege=privileges   
+#     def show_privileges(self):
+#         for item in self.privilege:
+#             print(item)   
+
+# class Admin(user):
+#     def __init__(self, first_name,last_name,privilege):
+#         super().__init__(first_name,last_name)
+#         self.privileges=privileges(privilege)                      
+
+# user1=user('foruid','morshed')
+# lists=["add posts", "generate time", "cafe go"]
+# admin=Admin('morshe','kafu',lists)
+# # admin.show_privileges()
+# # privilege=privileges(lists)
+# admin.privileges.show_privileges()
+
+'''problem 9-9'''
+
+class car:
+    def __init__(self, make, model, year, odometer_reading=0):
+        self.name="{} {}".format(model,year)
+        self.odometer=odometer_reading
+    def get_descriptive_name(self):
+        return self.name
+    def read_odometer(self):
+        return self.odometer
+    def update_odometer(self):
+        pass
+class battery:
+    def __init__(self, battery_size):
+        self.battery=battery_size
+    def describe_battery(self):
+        return self.battery
+    def upgrade_battery(self):
+        if self.battery != 65 :
+            self.battery = 65
+    def get_range(self):
+        if self.battery == 40:
+            return f"it can go 150 miles"
+        elif self.battery == 65:
+            return f"it can go 225 miles"        
+
+
+            
+class electriccar(car):
+    def __init__(self,make,model,year,odometer_reading=0,battery_size=40):
+        super().__init__(model,year,odometer_reading)
+        self.battery_info=battery(battery_size)
+
+electric=electriccar('subaru','YM200',2002)
+electric.battery_info.upgrade_battery()
+print(electric.battery_info.get_range())
