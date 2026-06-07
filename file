@@ -1,0 +1,27 @@
+# '''problem 10-6'''
+# num_1=input('num 1')
+# num_2=input('num_2')
+# try:
+#     sum=int(num_1)+int(num_2)
+#     print(sum)
+# except ValueError:
+#     print("it is not possible")
+
+'''problem 10-8'''
+from pathlib import Path
+file_1=Path('E:/cats.txt')
+file_2=Path('E:/dogs.txt')
+
+s1=file_1.read_text()
+s2=file_2.read_text() 
+
+s=['1','2','3','4','4','5']
+
+ss1=s1.splitlines()
+ss2=s2.splitlines()
+
+for digit in s[0:4]:
+    file_1.write_text(digit)
+
+print(ss1)
+print(ss2)
